@@ -1,0 +1,508 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+audio {
+    display: none;
+}
+#main-section {
+    padding-bottom: 100px;
+    background-color: black;
+    cursor: crosshair;
+}
+
+#main-section canvas{display:block}
+#main-section h1{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* balonn */
+
+/* If you can't see it just hit space in here*/
+#balon-section {
+    font-family:'Wendy One', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+}
+
+
+span {
+    text-transform: uppercase;
+}
+#balon-section .container {
+    width: 800px;
+    height: 420px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+#balon-section .balloon {
+    /* width: 738px; */
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+#balon-section .balloon > div {
+    width: 104px;
+    height: 140px;
+    background: rgba(182, 15, 97, 0.9);
+    border-radius: 0;
+    border-radius: 80% 80% 80% 80%;
+    margin: 0 auto;
+    position: absolute;
+    padding: 10px;
+    box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+    /* -webkit-transform-origin: bottom center; */
+}
+
+#balon-section .balloon > div:nth-child(1) {
+    background: rgba(182, 15, 97, 0.9);
+    left: 0;
+    box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(1):before {
+    color: rgba(182, 15, 97, 0.9);
+}
+#balon-section .balloon > div:nth-child(2) {
+    background: rgba(242, 112, 45, 0.9);
+    left: 120px;
+    box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(2):before {
+    color: rgba(242, 112, 45, 0.9);
+}
+#balon-section .balloon > div:nth-child(3) {
+    background: rgba(45, 181, 167, 0.9);
+    left: 240px;
+    box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+    -webkit-animation: balloon4 6s ease-in-out infinite;
+    -moz-animation: balloon4 6s ease-in-out infinite;
+    -o-animation: balloon4 6s ease-in-out infinite;
+    animation: balloon4 6s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(3):before {
+    color: rgba(45, 181, 167, 0.9);
+}
+#balon-section .balloon > div:nth-child(4) {
+    background: rgba(190, 61, 244, 0.9);
+    left: 360px;
+    box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+    -webkit-animation: balloon1 5s ease-in-out infinite;
+    -moz-animation: balloon1 5s ease-in-out infinite;
+    -o-animation: balloon1 5s ease-in-out infinite;
+    animation: balloon1 5s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(4):before {
+    color: rgba(190, 61, 244, 0.9);
+}
+#balon-section .balloon > div:nth-child(5) {
+    background: rgba(180, 224, 67, 0.9);
+    left: 480px;
+    box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+    -webkit-animation: balloon3 5s ease-in-out infinite;
+    -moz-animation: balloon3 5s ease-in-out infinite;
+    -o-animation: balloon3 5s ease-in-out infinite;
+    animation: balloon3 5s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(5):before {
+    color: rgba(180, 224, 67, 0.9);
+}
+#balon-section .balloon > div:nth-child(6) {
+    background: rgba(242, 194, 58, 0.9);
+    left: 600px;
+    box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+    -webkit-animation: balloon2 3s ease-in-out infinite;
+    -moz-animation: balloon2 3s ease-in-out infinite;
+    -o-animation: balloon2 3s ease-in-out infinite;
+    animation: balloon2 3s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(6):before {
+    color: rgba(242, 194, 58, 0.9);
+}
+
+#balon-section .balloon > div:nth-child(7) {
+    background: rgba(230, 37, 130, 0.9);
+    left: 720px;
+    box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+#balon-section .balloon > div:nth-child(7):before {
+    color: rgba(230, 37, 130, 0.9);
+}
+
+#balon-section .balloon > div:before {
+    color: rgba(182, 15, 97, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 52px;
+    content:"▲";
+    font-size: 1em;
+}
+
+#balon-section span {
+    font-size: 4.8em;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    margin-left: -27px;
+}
+/*BALLOON 1 4*/
+@-webkit-keyframes balloon1 {
+    0%, 100% {
+        -webkit-transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(8deg);
+    }
+}
+@-moz-keyframes balloon1 {
+    0%, 100% {
+        -moz-transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        -moz-transform: translateY(-20px) rotate(8deg);
+    }
+}
+@-o-keyframes balloon1 {
+    0%, 100% {
+        -o-transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        -o-transform: translateY(-20px) rotate(8deg);
+    }
+}
+@keyframes balloon1 {
+    0%, 100% {
+        transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(8deg);
+    }
+}
+/* BAllOON 2 5*/
+@-webkit-keyframes balloon2 {
+    0%, 100% {
+        -webkit-transform: translateY(0) rotate(6eg);
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(-8deg);
+    }
+}
+@-moz-keyframes balloon2 {
+    0%, 100% {
+        -moz-transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        -moz-transform: translateY(-30px) rotate(-8deg);
+    }
+}
+@-o-keyframes balloon2 {
+    0%, 100% {
+        -o-transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        -o-transform: translateY(-30px) rotate(-8deg);
+    }
+}
+@keyframes balloon2 {
+    0%, 100% {
+        transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(-8deg);
+    }
+}
+/* BAllOON 0*/
+@-webkit-keyframes balloon3 {
+    0%, 100% {
+        -webkit-transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+@-moz-keyframes balloon3 {
+    0%, 100% {
+        -moz-transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        -moz-transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+@-o-keyframes balloon3 {
+    0%, 100% {
+        -o-transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        -o-transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+@keyframes balloon3 {
+    0%, 100% {
+        transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+/* BAllOON 3*/
+@-webkit-keyframes balloon4 {
+    0%, 100% {
+        -webkit-transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        -webkit-transform: translate(-15px, 20px) rotate(10deg);
+    }
+}
+@-moz-keyframes balloon4 {
+    0%, 100% {
+        -moz-transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        -moz-transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+@-o-keyframes balloon4 {
+    0%, 100% {
+        -o-transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        -o-transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+@keyframes balloon4 {
+    0%, 100% {
+        transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+#balon-section h1 {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+#balon-section .scroll {
+    position: relative;
+    margin-top: -200px;
+    color: white;
+}
+#balon-section .scroll:hover{
+    cursor: pointer;
+}
+#balon-section h2 {
+    position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+}
+
+#balon-section .scroll h2::after {
+  content: " ";
+  position: absolute;
+  top: 120%; /* At the bottom of the tooltip */
+  left: 40%;
+  margin-left: -5px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: white transparent transparent transparent; 
+}
+
+/* TRANSITION */
+#transition {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(#000, #ee9ca7, #ee9ca7 90%);
+}
+
+#transition2 {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(#ee9ca7, #FDE3A7, #FDE3A7 90%);
+}
+
+#transition3 {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(#FDE3A7, #d44, #d44 90%);
+}
+
+.transition4 {
+    height: 300px;
+    width: 100%;
+    /* background: linear-gradient(#d44, #0D0D47, #0D0D47 90%); */
+    background: radial-gradient(circle, #0D0D47, #190E14);
+}
+
+
+/* cake */
+
+#containerCake {
+    background: #ee9ca7;
+}
+
+/* flipbook */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+#myBook {
+	font-family: 'Indie Flower', cursive !important;
+  background: #FDE3A7; /*CAPE HONEY*/
+	margin: 0px;
+	padding: 0px;
+    position: relative;
+    height: 700px;
+}
+
+#myBook #order {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#myBook #order h3:hover {
+    cursor: pointer;
+}
+#myBook::selection {
+	background: transparent;
+}
+
+#myBook h4 {
+	font-size: 26px;
+	line-height: 1px;
+	font-family: 'Amatic SC', cursive !important;
+}
+
+#myBook .color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
+#myBook .color2{color:#C0392B/*TALL POPPY*/}
+
+
+#myBook .card {
+	color: #013243; /*SHERPA BLUE*/
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	width: 300px;
+	height: 400px;
+	background: #e0e1dc;
+	transform-style: preserve-3d;
+	transform: translate(-50%,-50%) perspective(2000px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+	transition: 1s;
+}
+
+#myBook .card:hover {
+	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+
+#myBook .card:before {
+	content:'';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #BAC1BA;
+	transform-origin: bottom;
+	transform: skewX(-45deg);
+}
+
+#myBook .card:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	background: #92A29C;
+	transform-origin: left;
+	transform: skewY(-45deg);
+}
+
+#myBook .card .imgBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: .7s;
+}
+
+#myBook .card .bark {
+	position: absolute;
+	background: #e0e1dc;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .7s;
+}
+
+#myBook .card .imgBox img {
+	min-width: 300px;
+	max-height: 400px;
+}
+
+#myBook .card:hover .imgBox {
+	transform: rotateY(-135deg);
+}
+
+#myBook .card:hover .bark {
+	opacity: 1;
+	transition: .6s;
+  box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+#myBook .card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 70px;
+}
+
+#myBook .card .details p {
+	font-size: 15px;
+	line-height: 5px;
+	transform: rotate(-10deg);
+	padding: 0 0 0 20px;
+}
+
+#myBook .card .details h4 {
+	text-align: center;
+}
+
+#myBook .text-right {
+	text-align: right;
+}
