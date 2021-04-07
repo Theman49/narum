@@ -190,8 +190,17 @@ function includeHTML() {
   },1000);
 
 }
-var gift = document.getElementById("box");
+var book2 = document.getElementById("myBook2");
 $("#order h3").on("click", function(){
+  setTimeout(() => {
+    scrollTo(0, book2.offsetTop);
+  }, 1000);
+  
+})
+
+
+var gift = document.getElementById("box");
+$("#order2 h3").on("click", function(){
   setTimeout(() => {
     scrollTo(0, gift.offsetTop+200);
   }, 1000);
