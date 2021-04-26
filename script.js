@@ -1,3 +1,10 @@
+// audio
+var audio = document.getElementById("audio");
+audio.volume = 0.5;
+audio.currentTime = 13;
+audio.play();
+
+
 // helper functions
 const PI2 = Math.PI * 2
 const random = (min, max) => Math.random() * (max - min + 1) + min | 0
@@ -170,10 +177,7 @@ alert("click everywhere to see fireworks ☺")
 //     }
 // }
 
-// audio
-var audio = document.getElementById("audio");
-audio.volume = 0.5;
-audio.currentTime = 13;
+
 
 
 
