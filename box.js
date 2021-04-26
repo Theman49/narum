@@ -306,9 +306,12 @@ function reveal() {
   }
   
   var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "./video.mp4?controls=0&loop=1&autoplay=1");
+        ifrm.setAttribute("src", "https://www.youtube.com/embed/hlKFS27EdWo?autoplay=1");
         ifrm.style.width = `${w}px`;
         ifrm.style.height = `${h}px`;
         ifrm.style.border = 'none';
         document.querySelector('#video').appendChild(ifrm);
+
+var audio = document.getElementById("audio");
+audio.pause();
 }
